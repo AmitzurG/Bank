@@ -6,7 +6,7 @@ GENERAL
 - Using Kotlin coroutines to execute network operetions asynchronously. 
 - The views request data from the network by the ViewModel and observe the results with LiveData.
 - Using Glide library for images.
-- Using MPAndroidChart third party library for drawing the stocks graphs
+- Using MPAndroidChart third party library for drawing the stocks graphs.
 
 SCREENS DESCRIPTION
 
@@ -17,7 +17,7 @@ SCREENS DESCRIPTION
 - The second screen contains stocks information of the bank which has been clicked on.
 - The stocks information is from the network, using Alphavantage API.
 - Clicking on "INTERVAL" on the second screen actionbar enables to change the time interval of the information.
-- Clicking on the chart icon on the second screen actionbar navigates ti the third screen.
+- Clicking on the chart icon on the second screen actionbar navigates to the third screen.
 - The third screen contains graphes of the stock.
 - Clicking on "DATA" on the third screen actionbar enables to choose the graphs of which information to show.
 
