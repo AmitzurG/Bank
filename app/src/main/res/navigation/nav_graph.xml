@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/bankListFragment">
+
+    <fragment
+        android:id="@+id/bankListFragment"
+        android:name="com.app.bankapp.view.BankListFragment"
+        android:label="@string/bankListLabel"
+        tools:layout="@layout/fragment_bank_list">
+
+        <action
+            android:id="@+id/action_bankListFragment_to_BankStockInfoFragment"
+            app:destination="@id/bankStockInfoFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/fragment_open_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/bankStockInfoFragment"
+        android:name="com.app.bankapp.view.BankStockInfoFragment"
+        android:label="@string/bankStockInfoLabel"
+        tools:layout="@layout/fragment_bank_stock_info">
+        <argument
+            android:name="symbol"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_bankStockInfoFragment_to_bankStockGraphFragment"
+            app:destination="@id/bankStockGraphFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/fragment_open_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/bankStockGraphFragment"
+        android:name="com.app.bankapp.view.BankStockGraphFragment"
+        android:label="@string/bankStockGraphLabel" />
+</navigation>

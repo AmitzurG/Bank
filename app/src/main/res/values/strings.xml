@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">BankApp</string>
+    <string name="bankListLabel">Bank List</string>
+    <string name="bankStockInfoLabel">Stock Info</string>
+    <string name="bankStockGraphLabel">Stock Graph</string>
+    <string name="stockName">Stock name: </string>
+    <string name="priority">Priority: </string>
+    <string name="time">time</string>
+    <string name="open">open</string>
+    <string name="high">high</string>
+    <string name="low">low</string>
+    <string name="close">close</string>
+    <string name="volume">volume</string>
+    <string name="interval">Interval</string>
+    <string name="actionChangeInterval">Interval</string>
+    <string name="actionShowGraph">Graph</string>
+    <string name="actionDataInfo">Data</string>
+    <string name="chooseInterval">Choose interval</string>
+    <string name="chooseGraphData">Choose graph data</string>
+    <string-array name="intervals">
+        <item>1 minute</item>
+        <item>5 minutes</item>
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>60 minutes</item>
+    </string-array>
+    <string-array name="intervalValues">
+        <item>1min</item>
+        <item>5min</item>
+        <item>15min</item>
+        <item>30min</item>
+        <item>60min</item>
+    </string-array>
+    <string name="failedGetInfo">Failed to get the stock information</string>
+</resources>

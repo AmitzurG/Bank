@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context=".view.BankStockInfoFragment">
+
+    <LinearLayout
+        android:id="@+id/headersLayout"
+        android:layout_width="0dp" android:layout_height="@dimen/stock_info_item_header_height" android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_weight="1" android:layout_gravity="center" android:gravity="center"
+            android:text="@string/time" android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_weight="1" android:layout_gravity="center" android:gravity="center"
+            android:text="@string/open" android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_weight="1" android:layout_gravity="center" android:gravity="center"
+            android:text="@string/high" android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_weight="1" android:layout_gravity="center" android:gravity="center"
+            android:text="@string/low" android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_weight="1" android:layout_gravity="center" android:gravity="center"
+            android:text="@string/close" android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_weight="1" android:layout_gravity="center" android:gravity="center"
+            android:text="@string/volume" android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/stockInfoRecyclerView"
+        android:layout_width="0dp" android:layout_height="wrap_content"
+        android:scrollbars="vertical" android:background="@color/gray_11"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headersLayout" />
+
+    <TextView
+        android:id="@+id/failedTextView"
+        android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_marginTop="32dp" android:gravity="center"
+        android:text="@string/failedGetInfo" android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headersLayout" />
+
+    <ProgressBar
+        android:id="@+id/waitingProgressBar"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
