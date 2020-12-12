@@ -5,7 +5,7 @@ GENERAL
 - Using Retrofit and gson to get data from the network and parsing json, respectively. 
 - Using Kotlin coroutines to execute network operetions asynchronously. 
 - The views request data from the network by the ViewModel and observe the results with LiveData.
-- Using Glid library for images.
+- Using Glide library for images.
 - Using MPAndroidChart third party library for drawing the stocks graphs
 
 SCREENS DESCRIPTION
