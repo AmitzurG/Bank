@@ -21,7 +21,7 @@ SCREENS DESCRIPTION
 - The third screen contains graphes of the stock.
 - Clicking on "DATA" on the third screen actionbar enables to choose the graphs of which information to show.
 
-- LAUNCH APP
+LAUNCH APP
 
 - Open the project (contains code, resources, etc.) in Android Studio.  
 - Compile, build and run the application with Android Studio.
